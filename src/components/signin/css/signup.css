@@ -2,62 +2,63 @@
     margin: 0px;
     padding: 0px;
   }
-  #signIn{
+  #signUp{
     background-color: #fff;
   }
   .outer-container{
     display: flex;
     align-items: center;
     place-content: center;
-    height: 100vh;
-   
+    max-height: 100vh;
   }
   
-  .outer-container .left-container{
+  .signup-outer-container .left-container{
     background-color: black;
     color: white;
     /* height: 300px;
     padding: 20px 20px 20px 20px; */
-    padding: 229px 50px;
+    padding: 220px 50px;
+    height: 100px;
   }
-  .right-container{
+  .signup-right-container{
     background-color: #f1f1f1;
     padding: 20px 100px;
-    height: 450px;
+    /* height: 430px; */
+    max-height: fit-content;
   }
-  .signin-heading{
-    padding: 28px 0px;
+  .signup-heading{
+    padding: 0px 0px 10px 0px;
   }
-  .signin-acc{
+  .signup-acc{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
   }
-  .signin-acc p{
+  .signup-acc p{
     background-color: #fff;
-    padding: 13px 30px;
+    padding: 5px 30px;
     font-size: 14px;
-    /* border-radius: 20px; */
+    border-radius: 20px;
+    /* margin-bottom: 5px; */
   }
-  .signin-acc a{
+  .signup-acc a{
     text-decoration: none;
-    color: #817e7e;
+    color: #000;
   }
-  .signin-form{
+  .signup-form{
     background-color: white;
     padding: 22px 40px;
     border: 1px solid white;
     border-radius: 20px;
   }
-  .signin-form form{
+  .signup-form form{
     width: 330px;
-    height: 210px;
+    height: fit-content;
     border-radius: 10px;
     color: black;
     border: 0px solid black;
     /* border-radius: 30px; */
   }
-  .input-box{
+  .signup .input-box{
     border-radius: 15px;
     padding: 10px;
     margin: 10px 0;
@@ -81,7 +82,7 @@
     width: 100%;
   }
   
-  .signin-reg{
+  .signup-reg{
     margin-top: 4px;
   }
   
@@ -95,45 +96,51 @@
       height: 100vh;
      
     }
-    .outer-container .left-container{
+    .signup-outer-container .left-container{
       margin-top: 50px;
       background-color: black;
       color: white;
       /* height: 300px;
       padding: 20px 20px 20px 20px; */
-      padding: 30px 0px;
+      padding: 8px 0px;
       text-align: center;
     }
-    .signin-acc p{
+    .signup-outer-container .left-container h1{
+      padding-top: 25px;
+    }
+    .signup-acc p{
       background-color: #fff;
       padding: 5px 20px;
       font-size: 14px;
       border-radius: 20px;
       margin-bottom: 10px;
     }
-    .right-container{
+    .signup-right-container{
       background-color: #f1f1f1;
-      padding: 0px 20px;
+      padding: 10px 20px;
       height: 480px;
+      padding-bottom: 100px;
     }
-    .signin-form{
+    .signup-form{
       background-color: white;
       padding: 10px 10px !important;
       border: 1px solid white;
       border-radius: 20px;
+      width: max-content;
     }
-    .signin-form form{
-      height: 230px;
+    .signup-form form{
+      height: fit-content;
       border-radius: 10px;
       color: black;
       border: 0px solid black;
+      
       /* border-radius: 30px; */
     }
-    .input-box{
+    .signup .input-box{
       border-radius: 15px;
       padding: 12px;
-      margin: 10px 0;
-      width: 260px;
+      margin: 10px 0px;
+      width: 290px;
       border: 1px solid #f1f1f1;
        background: #f1f1f1;
        opacity: 0.65;
@@ -143,13 +150,12 @@
     
     .signup-btn{
       margin: 10px 0px 15px 0px;
-      width: 283px !important;
+      width: 315px !important;
       background-color: #000;
       color: white;
       border: none;
       border-radius: 8px;
       font-size: 15px;
       padding: 7px 14px;
-      width: 100%;
     }
   }

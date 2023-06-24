@@ -2,63 +2,62 @@
     margin: 0px;
     padding: 0px;
   }
-  #signUp{
+  #signIn{
     background-color: #fff;
   }
   .outer-container{
     display: flex;
     align-items: center;
     place-content: center;
-    max-height: 100vh;
+    height: 100vh;
+   
   }
   
-  .signup-outer-container .left-container{
+  .outer-container .left-container{
     background-color: black;
     color: white;
     /* height: 300px;
     padding: 20px 20px 20px 20px; */
-    padding: 220px 50px;
-    height: 100px;
+    padding: 229px 50px;
   }
-  .signup-right-container{
+  .right-container{
     background-color: #f1f1f1;
     padding: 20px 100px;
-    /* height: 430px; */
-    max-height: fit-content;
+    height: 450px;
   }
-  .signup-heading{
-    padding: 0px 0px 10px 0px;
+  .signin-heading{
+    padding: 28px 0px;
   }
-  .signup-acc{
+  .signin-acc{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
   }
-  .signup-acc p{
+  .signin-acc p{
     background-color: #fff;
-    padding: 5px 30px;
+    padding: 13px 30px;
     font-size: 14px;
-    border-radius: 20px;
-    /* margin-bottom: 5px; */
+    /* border-radius: 20px; */
   }
-  .signup-acc a{
+  .signin-acc a{
     text-decoration: none;
-    color: #000;
+    color: #817e7e;
   }
-  .signup-form{
+  .signin-form{
     background-color: white;
     padding: 22px 40px;
     border: 1px solid white;
     border-radius: 20px;
   }
-  .signup-form form{
+  .signin-form form{
     width: 330px;
-    height: fit-content;
+    height: 210px;
     border-radius: 10px;
     color: black;
     border: 0px solid black;
     /* border-radius: 30px; */
   }
-  .signup .input-box{
+  .input-box{
     border-radius: 15px;
     padding: 10px;
     margin: 10px 0;
@@ -82,7 +81,7 @@
     width: 100%;
   }
   
-  .signup-reg{
+  .signin-reg{
     margin-top: 4px;
   }
   
@@ -105,19 +104,13 @@
       padding: 30px 0px;
       text-align: center;
     }
-    .signup-acc p{
-      background-color: #fff;
-      padding: 5px 20px;
-      font-size: 14px;
-      border-radius: 20px;
-      margin-bottom: 10px;
-    }
+  
     .right-container{
       background-color: #f1f1f1;
       padding: 0px 20px;
       height: 480px;
     }
-    .signup-form{
+    .signin-form{
       background-color: white;
       padding: 10px 10px !important;
       border: 1px solid white;
@@ -152,5 +145,20 @@
       font-size: 15px;
       padding: 7px 14px;
       width: 100%;
+    }
+    .signin-acc{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .signin-acc p{
+      background-color: #fff;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 0px;
+    }
+    .signin-acc a{
+      text-decoration: none;
+      color: #817e7e;
     }
   }

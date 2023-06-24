@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
-import './signin/signin.css'
+import '../css/signin.css'
 import GoogleLogin from 'react-google-login';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import LoginBtn from './signin/LoginBtn';
+import LoginBtn from '../buttons/LoginBtn'
 
 
 const clientId = "509748131320-4g40oonnoe2pn5qahr6taj3ajl4h8arq.apps.googleusercontent.com";

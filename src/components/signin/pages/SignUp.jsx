@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
-import './signup.css'
+import '../css/signup.css'
 import GoogleLogin from 'react-google-login';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
