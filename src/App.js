@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import Dashboard from './components/dashboard/Dashboard';
 import Transactions from './components/dashboard/Transactions';
 import { useEffect } from 'react';
@@ -21,14 +21,14 @@ function App() {
   },[])
   return (
    <>
-      <BrowserRouter>
+      <HashRouter>
       <Routes>
         <Route path="/" element={<SignIn />}></Route>
         <Route path="/register" element={<SignUp />}></Route>
         <Route path="/dashboard" element={<Dashboard />}></Route>
         <Route path="/transactions" element={<Transactions />}></Route>
       </Routes>
-      </BrowserRouter> 
+      </HashRouter> 
    </>
   );
 }
