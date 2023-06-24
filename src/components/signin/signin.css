@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  #signIn{
+    background-color: #fff;
+  }
+  .outer-container{
+    display: flex;
+    align-items: center;
+    place-content: center;
+    height: 100vh;
+   
+  }
+  
+  .outer-container .left-container{
+    background-color: black;
+    color: white;
+    /* height: 300px;
+    padding: 20px 20px 20px 20px; */
+    padding: 229px 50px;
+  }
+  .right-container{
+    background-color: #f1f1f1;
+    padding: 20px 100px;
+    height: 450px;
+  }
+  .signin-heading{
+    padding: 28px 0px;
+  }
+  .signin-acc{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .signin-acc p{
+    background-color: #fff;
+    padding: 13px 30px;
+    font-size: 14px;
+    /* border-radius: 20px; */
+  }
+  .signin-acc a{
+    text-decoration: none;
+    color: #817e7e;
+  }
+  .signin-form{
+    background-color: white;
+    padding: 22px 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+  }
+  .signin-form form{
+    width: 330px;
+    height: 210px;
+    border-radius: 10px;
+    color: black;
+    border: 0px solid black;
+    /* border-radius: 30px; */
+  }
+  .input-box{
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 320px;
+    border: 1px solid #f1f1f1;
+     background: #f1f1f1;
+     opacity: 0.65;
+     color: black;
+    outline: none; 
+  }
+  
+  .signup-btn{
+    margin: 10px 0px 15px 0px;
+    width: 40%;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 7px 14px;
+    width: 100%;
+  }
+  
+  .signin-reg{
+    margin-top: 4px;
+  }
+  
+  @media only screen and (max-width:680px){
+    
+    .outer-container{
+      display: block;
+      overflow-x: hidden;
+      /* align-items: center;
+      place-content: center; */
+      height: 100vh;
+     
+    }
+    .outer-container .left-container{
+      margin-top: 50px;
+      background-color: black;
+      color: white;
+      /* height: 300px;
+      padding: 20px 20px 20px 20px; */
+      padding: 30px 0px;
+      text-align: center;
+    }
+    .signin-acc p{
+      background-color: #fff;
+      padding: 5px 20px;
+      font-size: 14px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .right-container{
+      background-color: #f1f1f1;
+      padding: 0px 20px;
+      height: 480px;
+    }
+    .signin-form{
+      background-color: white;
+      padding: 10px 10px !important;
+      border: 1px solid white;
+      border-radius: 20px;
+    }
+    .signin-form form{
+      height: 230px;
+      border-radius: 10px;
+      color: black;
+      border: 0px solid black;
+      /* border-radius: 30px; */
+    }
+    .input-box{
+      border-radius: 15px;
+      padding: 12px;
+      margin: 10px 0;
+      width: 260px;
+      border: 1px solid #f1f1f1;
+       background: #f1f1f1;
+       opacity: 0.65;
+       color: black;
+      outline: none; 
+    }
+    
+    .signup-btn{
+      margin: 10px 0px 15px 0px;
+      width: 283px !important;
+      background-color: #000;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      padding: 7px 14px;
+      width: 100%;
+    }
+  }

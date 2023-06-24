@@ -1,24 +1,37 @@
 import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SignIn from './components/SignIn';
+import Dashboard from './components/dashboard/Dashboard';
+import Transactions from './components/dashboard/Transactions';
+import { useEffect } from 'react';
+import { gapi } from 'gapi-script';
+import SignUp from './components/SignUp';
+import Navbar from './components/Navbar';
+
+const clientId = "509748131320-4g40oonnoe2pn5qahr6taj3ajl4h8arq.apps.googleusercontent.com";
 
 function App() {
+  useEffect(() => {
+    function start(){
+      gapi.client.init({
+        clientId: clientId,
+        scope: ""
+      })
+    };
+    gapi.load('client:auth2', start)
+  },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SignIn />}></Route>
+        <Route path="/navbar" element={<Navbar />}></Route>
+        <Route path="/register" element={<SignUp />}></Route>
+        <Route path="dashboard" element={<Dashboard />}></Route>
+        <Route path="transactions" element={<Transactions />}></Route>
+      </Routes>
+      </BrowserRouter> 
+   </>
   );
 }
 
